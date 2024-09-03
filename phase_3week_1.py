@@ -35,3 +35,20 @@ def factorial_of(n):
         result *= i
     return result
 print(factorial_of(5))
+
+
+
+# Decorator function that applies a simple decoration to another function
+def simple_decorator(func):
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+    return wrapper
+
+@simple_decorator
+def say_hello(name):
+    print(f"Hello, {name}!")
+say_hello("Jimmy")
+
+
+
+
