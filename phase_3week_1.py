@@ -68,3 +68,22 @@ def combine_dicts(dict_a, dict_b):
 dict_a = {'a': 9, 'b': 5}
 dict_b = {'b': 3, 'c': 7}
 print(combine_dicts(dict_a, dict_b))
+
+
+
+
+
+# Class to represent a car with attributes and a method to display information
+class Vehicle:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def show_details(self):
+        print(f"Vehicle Make: {self.make}")
+        print(f"Vehicle Model: {self.model}")
+        print(f"Vehicle Year: {self.year}")
+
+my_vehicle = Vehicle("G-wagon", "Camry", 2024)
+my_vehicle.show_details()
