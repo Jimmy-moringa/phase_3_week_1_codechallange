@@ -14,8 +14,24 @@ def reverse_string(s):
     return s[::-1]
 print(reverse_string("hello"))
 
-# Function to calculate the number of vowels in a string
+# Function to calculate the number of vowels in a string ie.my name
+def vowel_count(s):
+    vowels = "aeiou"
+    return sum(char in vowels for char in s.lower())
+print(vowel_count("Jimmy Musyoki Mulundi"))
+
+# method two
 def vowel_count(s):
     vowels = "aeiou"
     return sum(char in vowels for char in s)
-print(vowel_count("Jimmy Musyoki Mulundi"))  # Example usage with vowels
+print(vowel_count("Jimmy Musyoki Mulundi"))  
+
+# Function to compute the factorial of a given number
+def factorial_of(n):
+    if n == 0:
+        return 1
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+print(factorial_of(5))
