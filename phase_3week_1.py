@@ -13,3 +13,9 @@ print(check_even(11))
 def reverse_string(s):
     return s[::-1]
 print(reverse_string("hello"))
+
+# Function to calculate the number of vowels in a string
+def vowel_count(s):
+    vowels = "aeiou"
+    return sum(char in vowels for char in s)
+print(vowel_count("Jimmy Musyoki Mulundi"))  # Example usage with vowels
