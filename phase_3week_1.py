@@ -8,3 +8,8 @@ def check_even(num):
     return num % 2 == 0
 print(check_even(8))
 print(check_even(11))
+
+# Function to reverse the given string first leter becomes the last one
+def reverse_string(s):
+    return s[::-1]
+print(reverse_string("hello"))
