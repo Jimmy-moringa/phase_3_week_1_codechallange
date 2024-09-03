@@ -49,6 +49,22 @@ def say_hello(name):
     print(f"Hello, {name}!")
 say_hello("Jimmy")
 
+# Function to order a list of tuples based on age
+def order_by_age(people_list):
+    return sorted(people_list, key=lambda person: person[1])
+people = [("jimmy", 74), ("mulundi", 55), ("musyoki", 27),("kalama", 24), ("erick", 35), ("degrace", 18)]
+print(order_by_age(people))
 
 
-
+# Function to combine two dictionaries with value addition for common keys
+def combine_dicts(dict_a, dict_b):
+    combined = dict_a.copy()
+    for key, value in dict_b.items():
+        if key in combined:
+            combined[key] += value
+        else:
+            combined[key] = value
+    return combined
+dict_a = {'a': 9, 'b': 5}
+dict_b = {'b': 3, 'c': 7}
+print(combine_dicts(dict_a, dict_b))
