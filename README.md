@@ -1,3 +1,16 @@
+# Setup Instructions for Python Script
+
+This guide provides step-by-step instructions to set up and run a Python script that includes several functions and a class for various operations.
+
+## Prerequisites
+
+Before you begin, ensure you have the following:
+
+- **Python**: Python 3.x installed on your machine. You can download it from the [official Python website](https://www.python.org/downloads/). Verify your installation by running:
+  ```bash
+  python --version
+
+
 # Python Code Examples
 
 ## Overview
